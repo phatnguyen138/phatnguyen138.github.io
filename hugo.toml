@@ -1,0 +1,59 @@
+baseURL = "phatnguyen138.github.io"
+languageCode = "en-us"
+title = "Devops for Noobs"
+theme = "anubis2"
+
+[pagination]
+pagerSize = 5
+
+[params.author]
+name = "Phat Nguyen"
+
+[[menu.main]]
+identifier = "home"
+name = "Home"
+url = "/"
+weight = 1
+
+[[menu.main]]
+identifier = "about"
+name = "About"
+url = "/about/"
+weight = 2
+
+[[menu.main]]
+identifier = "categories"
+name = "Categories"
+url = "/categories/"
+weight = 3
+
+[[menu.main]]
+identifier = "tags"
+name = "Tags"
+url = "/tags/"
+weight = 4
+
+[[menu.main]]
+identifier = "archive"
+name = "Archive"
+url = "/posts/"
+weight = 5
+
+[[menu.main]]
+identifier = "resources"
+name = "Resources"
+url = "/resources/"
+weight = 6
+
+[[menu.main]]
+identifier = "contact"
+name = "Contact"
+url = "/contact/"
+weight = 7
+
+[markup.goldmark.renderer]
+unsafe = true # Enable unsafe mode to have a better experience
+
+[markup.highlight]
+style = 'catppuccin-mocha' # Find more style at here: https://swapoff.org/chroma/playground/
+
