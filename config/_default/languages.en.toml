@@ -1,0 +1,26 @@
+disabled = false
+languageCode = "en"
+languageName = "English"
+weight = 1
+title = "The Linux Monk"
+
+[params]
+  displayName = "EN"
+  isoCode = "en"
+  rtl = false
+  dateFormat = "2 January 2006"
+  # logo = "img/logo.png"
+  # secondaryLogo = "img/secondary-logo.png"
+  # description = "My awesome website"
+  # copyright = "Copy, _right?_ :thinking_face:"
+
+[params.author]
+  name = "Nguyen Minh Phat"
+  email = "minhphatnguyen6@gmail.com"
+  bio = "The man who fell in love with Linux"
+  links = [
+    { email = "mailto:minhphatnguyen6@gmail.com" },
+    # { link = "https://link-to-some-website.com/" },
+    { github = "https://github.com/phatnguyen138" },
+    { linkedin = "https://www.linkedin.com/in/nguyen-minh-phat" },
+  ]
