@@ -7,6 +7,7 @@ showAuthor = false
 showReadingTime = false
 showEdit = false
 showPagination = false
+layout = "simple"
 +++
 
 # Phat Nguyen
@@ -19,75 +20,102 @@ showPagination = false
 
 ## Professional Summary
 
-I work as a DevOps / Cloud Engineer, focusing on Linux-based systems, AWS, and infrastructure as code. I’m particularly interested in automation, scalable cloud design, and gradually expanding my knowledge in security. I write to clarify my own understanding and to share practical lessons with others working in DevOps and cloud.
+{{< lead >}}
+I work as a DevOps / Cloud Engineer, focusing on Linux-based systems, AWS, and infrastructure as code. I'm particularly interested in automation, scalable cloud design, and gradually expanding my knowledge in security. I write to clarify my own understanding and to share practical lessons with others working in DevOps and cloud.
+{{< /lead >}}
 
 ---
-
 ## Technical Skills
 
-### Programming & Scripting
-- **Scripting**: Bash, Shell scripting
-- **Programming**: Python, Go
+### Cloud & Infrastructure
+{{< keywordList >}}
+{{< keyword icon="cloud" >}}AWS{{< /keyword >}}
+{{< keyword icon="googlecloud" >}}GCP{{< /keyword >}}
+{{< keyword icon="digitalocean" >}}Digital Ocean{{< /keyword >}}
+{{< keyword icon="linux" >}}Linux (Ubuntu/CentOS){{< /keyword >}}
+{{< keyword icon="kubernetes" >}}Kubernetes{{< /keyword >}}
+{{< keyword icon="docker" >}}Docker{{< /keyword >}}
+{{< /keywordList >}}
 
-### Cloud Platforms
-- Amazon Web Services (AWS)
-- Google Cloud Platform (GCP)
-
-### Operating Systems
-- **Linux Distributions**: Ubuntu, CentOS
-- System administration, networking, permissions, services
-
-### Containers & Orchestration
-- **Containerization**: Docker
-- **Orchestration**: Kubernetes, Helm
+### IaC & Configuration
+{{< keywordList >}}
+{{< keyword icon="terraform" >}}Terraform{{< /keyword >}}
+{{< keyword icon="terraform" >}}Terragrunt{{< /keyword >}}
+{{< keyword icon="cloud" >}}CloudFormation{{< /keyword >}}
+{{< keyword icon="ansible" >}}Ansible{{< /keyword >}}
+{{< keyword icon="helm" >}}Helm{{< /keyword >}}
+{{< /keywordList >}}
 
 ### CI/CD & GitOps
-- **CI/CD Tools**: GitHub Actions, Jenkins, GitLab CI, BitBucket Pipelines
-- **Configuration Management**: Ansible
+{{< keywordList >}}
+{{< keyword icon="github" >}}GitHub Actions{{< /keyword >}}
+{{< keyword icon="gitlab" >}}GitLab CI{{< /keyword >}}
+{{< keyword icon="jenkins" >}}Jenkins{{< /keyword >}}
+{{< keyword icon="argo" >}}ArgoCD{{< /keyword >}}
+{{< /keywordList >}}
 
-### Infrastructure as Code
-- Terraform, Terragrunt
-- AWS CloudFormation, CDK
+### Security (DevSecOps)
+{{< keywordList >}}
+{{< keyword icon="sonarqubecloud" >}}SonarQube{{< /keyword >}}
+{{< keyword icon="trivy" >}}Trivy{{< /keyword >}}
+{{< keyword icon="owasp" >}}OWASP ZAP{{< /keyword >}}
+{{< /keywordList >}}
 
-### Monitoring & Logging
-- Prometheus, Grafana
-- ELK Stack (Elasticsearch, Logstash, Kibana)
-- AWS CloudWatch
-- Datadog
+### Observability
+{{< keywordList >}}
+{{< keyword icon="prometheus" >}}Prometheus{{< /keyword >}}
+{{< keyword icon="grafana" >}}Grafana{{< /keyword >}}
+{{< keyword icon="datadog" >}}Datadog{{< /keyword >}}
+{{< keyword icon="cloud" >}}AWS CloudWatch{{< /keyword >}}
+{{< keyword icon="search" >}}ELK Stack{{< /keyword >}}
+{{< keyword icon="grafana" >}}Loki{{< /keyword >}}
+{{< /keywordList >}}
 
-## Automation & Integration
-- n8n
-- Custom automation scripts and CI/CD pipelines
+### Programming & Automation
+{{< keywordList >}}
+{{< keyword icon="python" >}}Python{{< /keyword >}}
+{{< keyword icon="go" >}}Go{{< /keyword >}}
+{{< keyword icon="gnubash" >}}Bash{{< /keyword >}}
+{{< keyword icon="n8n" >}}N8n{{< /keyword >}}
+{{< /keywordList >}}
 
 ---
+
 ## Professional Experience
 
-### DevOps Engineer
-**KMS Technology** | *Ho Chi Minh City, Vietnam* | *Oct 2025 – Present*
+{{< timeline >}}
 
-- Provisioned and managed a multi-region Data Lake architecture on **AWS** using **Terraform** and **Terragrunt**, supporting a large-scale decentralized clinical trial platform.
-- Orchestrated the deployment of 20+ services per region across **AWS ECS** and **Lambda**, ensuring high availability and fault tolerance.
-- Engineered custom CI/CD workflows using **Bitbucket Pipelines** to automate build orchestration and enforce environment-specific controls across development, staging, and production.
-- Developed automation tools in **Go**, **Python**, and **Bash** to streamline infrastructure lifecycle management and reduce manual intervention.
-- Enhanced system observability by implementing comprehensive monitoring and alerting using **Datadog** for cloud services and application workloads.
+{{< timelineItem icon="briefcase" header="DevOps Engineer" badge="Oct 2025 – Present" subheader="KMS Technology | Ho Chi Minh City, Vietnam" >}}
+<ul>
+  <li>Manage a multi-region Data Lake architecture on <strong>AWS</strong> using <strong>Terraform</strong> and <strong>Terragrunt</strong>, supporting a large-scale decentralized clinical trial platform.</li>
+  <li>Orchestrate the deployment and scaling of 20+ services per region across <strong>AWS ECS</strong> and <strong>Lambda</strong> to ensure high availability.</li>
+  <li>Maintain and optimize CI/CD workflows using <strong>Bitbucket Pipelines</strong>, enforcing strict environment-specific controls across development, staging, and production.</li>
+  <li>Develop automation tools in <strong>Go</strong>, <strong>Python</strong>, and <strong>Bash</strong> to streamline infrastructure lifecycle management.</li>
+  <li>Enhance system observability by implementing comprehensive monitoring and alerting using <strong>Datadog</strong> for cloud services.</li>
+</ul>
+{{< /timelineItem >}}
 
-### DevOps Engineer
-**Golden Owl Solutions** | *Ho Chi Minh City, Vietnam* | *Oct 2023 – Oct 2025*
+{{< timelineItem icon="briefcase" header="DevOps Engineer" badge="Oct 2023 – Oct 2025" subheader="Golden Owl Solutions | Ho Chi Minh City, Vietnam" >}}
+<ul>
+  <li>Architected and managed scalable infrastructure for a large-scale VPN application, handling 52+ servers across multiple cloud providers using <strong>AWS</strong>, <strong>Terraform</strong>, and <strong>Ansible</strong>.</li>
+  <li>Deployed and orchestrated a 10+ node IoT backend cluster on <strong>Kubernetes</strong> with <strong>ArgoCD</strong>, ensuring high availability for real-time smartwatch data.</li>
+  <li>Designed high-traffic cloud environments for a personality testing platform using <strong>AWS ECS</strong>, <strong>RDS</strong>, and <strong>Terragrunt</strong>, integrating auto-scaling to handle traffic spikes.</li>
+  <li>Established centralized logging and monitoring ecosystems using <strong>Grafana</strong>, <strong>Prometheus</strong>, and <strong>Loki</strong>, enabling proactive issue resolution and real-time visualization.</li>
+  <li>Implemented robust <strong>DevSecOps</strong> pipelines via <strong>GitLab CI</strong>, integrating security compliance tools and automated testing.</li>
+  <li>Automated operational workflows using <strong>n8n</strong> and <strong>Python</strong> scripts to orchestrate metric alerts, build reports, and routine maintenance, significantly reducing manual overhead.</li>
+</ul>
+{{< /timelineItem >}}
 
-- Architected and managed scalable infrastructure for a large-scale VPN application, handling 52+ servers across multiple cloud providers using **AWS**, **Terraform**, and **Ansible**.
-- Deployed and orchestrated a 10+ node IoT backend cluster on **Kubernetes** with **ArgoCD**, ensuring high availability for real-time smartwatch data.
-- Designed high-traffic cloud environments for a personality testing platform using **AWS ECS**, **RDS**, and **Terragrunt**, integrating auto-scaling to handle traffic spikes.
-- Established centralized logging and monitoring ecosystems using **Grafana**, **Prometheus**, and **Loki**, enabling proactive issue resolution and real-time visualization.
-- Implemented robust **DevSecOps** pipelines via **GitLab CI**, integrating security compliance tools and automated testing.
-- Automated operational workflows using **n8n** and **Python** scripts to orchestrate metric alerts, build reports, and routine maintenance, significantly reducing manual overhead.
+{{< timelineItem icon="code" header="Backend Engineer Intern" badge="Feb 2022 – June 2023" subheader="TMA Solutions | Ho Chi Minh City, Vietnam" >}}
+<ul>
+  <li>Developed backend services for a Real Estate Transactions platform using <strong>Java Spring Boot</strong>.</li>
+  <li>Implemented secure authentication systems integrating <strong>OAuth2</strong> and <strong>JWT</strong>, including password hashing and account lockout mechanisms.</li>
+  <li>Designed and optimized RESTful APIs for cart management services, improving system performance through effective caching strategies.</li>
+  <li>Collaborated with cross-functional teams to bug fix and improve legacy code reliability.</li>
+</ul>
+{{< /timelineItem >}}
 
-### Backend Engineer Intern
-**TMA Solutions** | *Ho Chi Minh City, Vietnam* | *Feb 2022 – June 2023*
-
-- Developed backend services for a Real Estate Transactions platform using **Java Spring Boot**.
-- Implemented secure authentication systems integrating **OAuth2** and **JWT**, including password hashing and account lockout mechanisms.
-- Designed and optimized RESTful APIs for cart management services, improving system performance through effective caching strategies.
-- Collaborated with cross-functional teams to bug fix and improve legacy code reliability.
+{{< /timeline >}}
 
 ---
 
@@ -109,8 +137,6 @@ I work as a DevOps / Cloud Engineer, focusing on Linux-based systems, AWS, and i
 
 ---
 
-## References
-
----
-
-*Last updated: December 2025*
+{{< alert icon="envelope" >}}
+**Open to opportunities!** Feel free to reach out at **minhphatnguyen6@gmail.com** for collaboration or career opportunities.
+{{< /alert >}}
