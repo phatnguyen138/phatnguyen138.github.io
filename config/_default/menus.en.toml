@@ -11,9 +11,33 @@
 # ordered by weight from lowest to highest.
 
 [[main]]
- name = "Blog"
+ name = "Posts"
  pageRef = "posts"
  weight = 10
+
+[[main]]
+ name = "Linux & Scripting"
+ parent = "Posts"
+ pageRef = "categories/linux-scripting"
+ weight = 1
+
+[[main]]
+ name = "Cloud & Infrastructure"
+ parent = "Posts"
+ pageRef = "categories/cloud-infrastructure"
+ weight = 2
+
+[[main]]
+ name = "CI/CD & Automation"
+ parent = "Posts"
+ pageRef = "categories/cicd-automation"
+ weight = 3
+
+[[main]]
+ name = "The Homelab"
+ parent = "Posts"
+ pageRef = "categories/homelab"
+ weight = 4
 
 [[main]]
  name = "About"

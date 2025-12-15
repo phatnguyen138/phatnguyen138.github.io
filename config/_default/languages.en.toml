@@ -12,8 +12,10 @@ dateFormat = "2 January 2006"
 
   [params.author]
   name = "Nguyen Minh Phat"
+  # image = "img/avatar.jpg"  # Uncomment and add your avatar image to static/img/
+  headline = "The Linux Monk"
+  bio = "Sharing knowledge about Linux, Cloud, CI/CD, and Homelab"
   email = "minhphatnguyen6@gmail.com"
-  bio = "The man who fell in love with Linux"
 
     [[params.author.links]]
     email = "mailto:minhphatnguyen6@gmail.com"
