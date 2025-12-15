@@ -6,11 +6,7 @@ description = 'Welcome to The Linux Monk - Posts about Linux, Cloud, CI/CD, and 
 categories = ['linux-scripting', 'cloud-infrastructure', 'cicd-automation', 'homelab']
 tags = ['welcome']
 
-# Hero image configuration
 showHero = true
-heroStyle = "background"  # Options: basic, big, background, thumbAndBackground
-featureImage = "img/welcome-hero.jpg"  # Add your Linux distro image here
-featureImageAlt = "Linux Distributions"
 +++
 
 Welcome to **The Linux Monk**! 🐧
