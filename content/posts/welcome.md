@@ -4,7 +4,13 @@ date = '2025-12-11T21:17:44+07:00'
 draft = false
 description = 'Welcome to The Linux Monk - Posts about Linux, Cloud, CI/CD, and Homelab'
 categories = ['linux-scripting', 'cloud-infrastructure', 'cicd-automation', 'homelab']
-tags = ['welcome', 'introduction']
+tags = ['welcome']
+
+# Hero image configuration
+showHero = true
+heroStyle = "background"  # Options: basic, big, background, thumbAndBackground
+featureImage = "img/welcome-hero.jpg"  # Add your Linux distro image here
+featureImageAlt = "Linux Distributions"
 +++
 
 Welcome to **The Linux Monk**! 🐧

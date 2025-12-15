@@ -1,44 +1,63 @@
-/* Custom CSS - Hide categories, show only tags */
+/* Custom CSS - Hide category badges, show only tag badges */
 
-/* Hide category taxonomy items */
-.taxonomy-category {
-  display: none !important;
+/* IMPORTANT: Only hide category badges in metadata areas, NOT content links */
+
+/* Hide category badges (the small pills) in article metadata */
+.prose .badge a[href*="/categories/"],
+article .badge a[href*="/categories/"],
+.article-meta .badge a[href*="/categories/"] {
+    display: none !important;
 }
 
-/* Hide categories in article metadata */
-article .meta .categories,
-.article-meta .categories {
-  display: none !important;
+/* Alternative: Hide the parent link that wraps badges for categories */
+article > div a[href*="/categories/"].relative,
+.prose > div a[href*="/categories/"].relative,
+a.relative[href*="/categories/"]:has(.badge) {
+    display: none !important;
 }
 
-/* Ensure tags are still visible */
-.taxonomy-tag {
-  display: inline-flex !important;
+/* Hide category links that have the "me-2" margin class (taxonomy badges) */
+a.me-2[href*="/categories/"],
+a[class*="me-"][href*="/categories/"]:has(.badge) {
+    display: none !important;
 }
 
-/* Hide category links in taxonomy lists */
-a[href*="/categories/"]:not(.category-link-keep) {
-  display: none !important;
-}
-
-/* Keep category links in navigation menu */
+/* Keep ALL category links in navigation menu visible */
 nav a[href*="/categories/"],
-.main-menu a[href*="/categories/"] {
-  display: inline-flex !important;
+header a[href*="/categories/"],
+.menu a[href*="/categories/"],
+[role="navigation"] a[href*="/categories/"] {
+    display: flex !important;
+    visibility: visible !important;
 }
 
-/* Hide categories section but keep tags */
-.taxonomies .categories {
-  display: none !important;
+/* Keep category links in regular content (markdown) visible */
+.prose p a[href*="/categories/"],
+.prose ul a[href*="/categories/"],
+.prose li a[href*="/categories/"],
+.prose h1 a[href*="/categories/"],
+.prose h2 a[href*="/categories/"],
+.prose h3 a[href*="/categories/"],
+.prose h4 a[href*="/categories/"],
+article p a[href*="/categories/"],
+article ul a[href*="/categories/"],
+article li a[href*="/categories/"] {
+    display: inline !important;
+    visibility: visible !important;
 }
 
-/* Style tags nicely */
-.taxonomy-tag a {
-  display: inline-flex;
-  align-items: center;
-  padding: 0.25rem 0.75rem;
-  margin: 0.25rem;
-  border-radius: 0.375rem;
-  font-size: 0.875rem;
-  transition: all 0.2s ease;
+/* Ensure tag badges remain fully visible */
+a[href*="/tags/"] {
+    display: inline-flex !important;
+    visibility: visible !important;
+}
+
+a[href*="/tags/"] .badge {
+    display: inline-flex !important;
+    visibility: visible !important;
+}
+
+/* Clean up spacing */
+.flex.flex-row.flex-wrap.items-center {
+    gap: 0.5rem;
 }
